@@ -3,9 +3,16 @@
   "version": "5.0.1",
   "description": "JavaScript expression parsing and evaluation.",
   "source": "index.ts",
+  "type": "module",
   "main": "dist/expression-eval.js",
   "module": "dist/expression-eval.module.js",
   "unpkg": "dist/expression-eval.umd.js",
+  "exports": {
+    ".": {
+      "import": "./dist/expression-eval.module.js",
+      "require": "./dist/expression-eval.js"
+    }
+  },
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
